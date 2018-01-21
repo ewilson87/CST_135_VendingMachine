@@ -149,7 +149,9 @@ public class CustomerDisplay {
         //closes the window to view the inventory
         Button viewInventoryButton = new Button("View Inventory");
         viewInventoryButton.setMinWidth(200);
-        viewInventoryButton.setOnAction(e -> closeDisplay());
+        viewInventoryButton.setOnAction(e -> {
+            closeDisplay();
+        });
 
             VBox person2VBox = new VBox(25);
             person2VBox.setAlignment(Pos.CENTER);
@@ -198,7 +200,7 @@ public class CustomerDisplay {
 
             Scene scene = new Scene(rootLayout, 1200, 600);
             window.setScene(scene);
-            window.show();
+            window.showAndWait();
         }
 
         public void closeDisplay () {

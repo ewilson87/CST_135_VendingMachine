@@ -396,7 +396,7 @@ public class Interface extends Application {
         customerQueue.setOnAction(e -> {
             CustomerDisplay customerDisplay = new CustomerDisplay();
             customerDisplay.display(dispenser.inventory);
-
+            inventoryTableView.refresh();
         });
 
         //create checkout buttons for each scene
